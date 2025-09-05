@@ -1,2 +1,4 @@
-package com.example.week1.controller;public class FirstController {
+package com.example.week1.controller;
+
+public class FirstController {
 }
