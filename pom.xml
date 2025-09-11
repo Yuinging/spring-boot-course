@@ -23,7 +23,11 @@
     </developers>
     <modules>
         <module>spring-boot-quickstart</module>
+        <module>spring-boot-config</module>
     </modules>
+
+
+
     <scm>
         <connection/>
         <developerConnection/>
@@ -53,8 +57,19 @@
             <optional>true</optional>
         </dependency>
 
+        <!--  lombok-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+
+
 
     </dependencies>
+
+
 
     <build>
         <plugins>

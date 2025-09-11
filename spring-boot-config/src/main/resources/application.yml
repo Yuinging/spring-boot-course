@@ -1,0 +1,14 @@
+server:
+  port: 8081
+
+team:
+  leader: "yyyin"
+  phone: "12345678910"
+  age: 3
+  createDate: "2019-09-01"
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB     # 单个上传⽂件⼤⼩限定为10M，默认值为1M
+      max-request-size: 100MB
