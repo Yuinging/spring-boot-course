@@ -12,3 +12,13 @@ spring:
     multipart:
       max-file-size: 10MB     # 单个上传⽂件⼤⼩限定为10M，默认值为1M
       max-request-size: 100MB
+
+  mail:
+    host: smtp.qq.com
+    username: "2248205150@qq.com"
+    password: "kabbgwovzcpmecig"
+    properties.mail.smtp.ssl.enable: true
+
+custom:
+  qrcode:
+    content: "https://www.baidu.com"
