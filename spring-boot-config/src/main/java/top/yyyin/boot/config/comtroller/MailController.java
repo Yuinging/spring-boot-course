@@ -6,7 +6,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import top.yyyin.boot.config.ApiResponse;
+import top.yyyin.boot.config.common.ApiResponse;
 import top.yyyin.boot.config.enums.ResultStatus;
 import top.yyyin.boot.config.moddel.Mail;
 import top.yyyin.boot.config.service.MailService;

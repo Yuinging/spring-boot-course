@@ -1,7 +1,7 @@
 package top.yyyin.boot.config.comtroller;
 
 import org.springframework.web.bind.annotation.*;
-import top.yyyin.boot.config.ApiResponse;
+import top.yyyin.boot.config.common.ApiResponse;
 import top.yyyin.boot.config.enums.DrinkType;
 
 import java.util.ArrayList;
