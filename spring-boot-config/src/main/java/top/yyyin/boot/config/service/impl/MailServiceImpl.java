@@ -1,5 +1,6 @@
 package top.yyyin.boot.config.service.impl;
 
+
 import jakarta.annotation.Resource;
 import jakarta.mail.internet.MimeMessage;
 import org.springframework.beans.factory.annotation.Value;

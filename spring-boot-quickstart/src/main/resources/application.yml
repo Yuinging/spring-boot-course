@@ -14,7 +14,7 @@ my:
 
 yyyin:
   sms:
-    ccp:
+      ccd:
       serverIp: app.cloopen.com
       port: 8883
       accountSId: 2c94811c9860a9c401991cb7de03206f
