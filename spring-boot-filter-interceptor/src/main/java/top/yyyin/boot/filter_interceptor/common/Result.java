@@ -3,7 +3,6 @@ package top.yyyin.boot.filter_interceptor.common;
 import lombok.Data;
 import top.yyyin.boot.filter_interceptor.enums.ErrorCode;
 
-
 @Data
 public class Result<T> {
     private int code = 0;

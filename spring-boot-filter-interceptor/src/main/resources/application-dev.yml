@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 8080
 spring:
   # Redis 配置
   data:
@@ -27,3 +27,4 @@ spring:
           min-idle: 10
           # 空闲连接检测周期
           time-between-eviction-runs: 60s
+

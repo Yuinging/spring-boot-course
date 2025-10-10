@@ -1,6 +1,5 @@
 package top.yyyin.boot.filter_interceptor.filter;
 
-
 import jakarta.annotation.Resource;
 import jakarta.servlet.*;
 import jakarta.servlet.http.HttpServletRequest;
@@ -12,6 +11,9 @@ import org.springframework.stereotype.Component;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+/**
+ 限流过滤器
+ */
 @Slf4j
 @Component
 public class RateLimitFilter implements Filter {
@@ -22,11 +24,10 @@ public class RateLimitFilter implements Filter {
     private StringRedisTemplate stringRedisTemplate;
 
     @Override
-    public void init(FilterConfig filterConfig) throws ServletException {
+    public void init(jakarta.servlet.FilterConfig filterConfig) throws ServletException {
         log.info("RateLimitFilter 初始化");
-        //SpringBeanAutowiringSupport.processInjectionBasedOnServletContext(this,
-        //        filterConfig.getServletContext());
     }
+
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
@@ -48,7 +49,7 @@ public class RateLimitFilter implements Filter {
 
         if (count >= LIMIT_COUNT) {
             httpResponse.setStatus(429);
-            httpResponse.getWriter().write("{\"code\":429,\"msg\":\"请求过于频繁,请1分钟后再试\"}");
+            httpResponse.getWriter().write("{\"code\":429,\"msg\":\"请求过于频繁，请1分钟后再试\"}");
             return;
         }
 
@@ -61,3 +62,4 @@ public class RateLimitFilter implements Filter {
         filterChain.doFilter(servletRequest, servletResponse);
     }
 }
+
