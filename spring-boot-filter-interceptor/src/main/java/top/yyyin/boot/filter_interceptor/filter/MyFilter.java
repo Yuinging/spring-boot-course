@@ -2,10 +2,11 @@ package top.yyyin.boot.filter_interceptor.filter;
 
 import jakarta.servlet.*;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 
-//@Component
+@Component
 @Slf4j
 public class MyFilter implements Filter {
     @Override
