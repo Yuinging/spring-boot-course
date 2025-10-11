@@ -21,6 +21,7 @@
         <module>spring-boot-redis</module>
         <module>spring-boot-filter-interceptor</module>
         <module>spring-boot-websocket</module>
+        <module>spring-boot-schedule</module>
     </modules>
 
     <properties>

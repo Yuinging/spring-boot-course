@@ -216,7 +216,23 @@
 
         const contentDiv = document.createElement('div');
         contentDiv.className = 'message-content';
-        contentDiv.textContent = content;
+
+        // 美化JSON格式的设备监控数据显示
+        if (content.includes('"deviceId"')) {
+            try {
+                const jsonObj = JSON.parse(content.split('📊 设备监控: ')[1]);
+                contentDiv.textContent = '📊 设备监控: ';
+
+                const pre = document.createElement('pre');
+                pre.style.fontSize = '14px';
+                pre.textContent = JSON.stringify(jsonObj, null, 2);
+                contentDiv.appendChild(pre);
+            } catch (e) {
+                contentDiv.textContent = content;
+            }
+        } else {
+            contentDiv.textContent = content;
+        }
 
         message.appendChild(timeDiv);
         message.appendChild(contentDiv);

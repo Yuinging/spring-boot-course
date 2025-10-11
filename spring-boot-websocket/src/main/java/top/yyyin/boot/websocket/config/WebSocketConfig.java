@@ -1,11 +1,11 @@
-package top.yyyin.boot.websoket.config;
+package top.yyyin.boot.websocket.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.socket.config.annotation.EnableWebSocket;
 import org.springframework.web.socket.config.annotation.WebSocketConfigurer;
 import org.springframework.web.socket.config.annotation.WebSocketHandlerRegistry;
-import top.yyyin.boot.websoket.handler.SimpleTimeWebSocketHandler;
-import top.yyyin.boot.websoket.handler.TestWebSocketHandler;
+import top.yyyin.boot.websocket.handler.SimpleTimeWebSocketHandler;
+import top.yyyin.boot.websocket.handler.TestWebSocketHandler;
 
 @Configuration
 @EnableWebSocket

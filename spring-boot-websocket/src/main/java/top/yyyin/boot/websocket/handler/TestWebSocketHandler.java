@@ -1,4 +1,4 @@
-package top.yyyin.boot.websoket.handler;
+package top.yyyin.boot.websocket.handler;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;

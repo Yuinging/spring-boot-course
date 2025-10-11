@@ -1,4 +1,4 @@
-package top.yyyin.boot.websoket;
+package top.yyyin.boot.websocket;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.scheduling.annotation.EnableScheduling;
